@@ -1,0 +1,38 @@
+.panel__list {
+    margin-top: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.panel__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    opacity: 50%;
+    transition:all .3s ease-in-out ;
+
+    cursor: pointer;
+}
+
+.panel__item:hover {
+    opacity: 100%;
+}
+
+.panel__bg {
+    background: lightskyblue;
+    opacity: 90%;
+    padding: 7px;
+    border-radius: 3px;
+
+}
+
+.panel__image {
+    width: 20px;
+    height: 20px;
+}
+
+.panel_content {
+    font-size: 14px;
+
+}

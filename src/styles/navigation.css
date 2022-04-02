@@ -1,0 +1,40 @@
+
+.header {
+    position: sticky;
+    top: 0;
+    background: white;
+
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+.navigation {
+    max-width: 1280px !important;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 5px 10px 0;
+}
+
+.lightning {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.light {
+    width: 30px;
+    height: 30px;
+}
