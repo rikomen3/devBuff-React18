@@ -1,0 +1,62 @@
+.ideas {
+    width: 70%;
+}
+
+.ideas__title {
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.ideas__list {
+    list-style-type: none;
+    padding: 0;
+}
+/* USERINFO  COMPONENT */
+
+.userinfo__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.userinfo__image {
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+}
+
+.userinfo__nick {
+    font-size: 10px;
+    color: lightgray;
+    opacity: 80%;
+}
+
+.userinfo__name {
+    font-size: 10px;
+}
+
+
+/* IDEA CONTENT COMPONENT */
+
+.idea__content {
+    margin-top: 25px;
+
+}
+
+.idea__content__title {
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 70%;
+}
+
+.idea__content__text {
+    font-size: 16px;
+    margin-top: 10px;
+
+    color: lightgray;
+    opacity: 80%;
+    line-height: 1.5;
+    word-break: break-all;
+}
