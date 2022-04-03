@@ -3,18 +3,15 @@ import {List} from 'react-content-loader';
 import Idea from "./Idea";
 import '../../../styles/ideas.css'
 import {useEffect, useState} from "react";
+import IdeaService from "../../../service/fetch_data/idea/IdeaService";
 
 export default function Ideas () {
     const [idea,setIdea] = useState()
 
     useEffect( ()=>{
-        async function fetchData() {
-            let res = await fetch('https://api-staging.devbuff.com/idea/?page=1&sortBy=LAST_UPDATE&specialists=&languages=')
-            let ideas = await res.json()
-            return ideas.ideas
-        }
-        fetchData()
-            .then( result => setIdea(result))
+        const data = new IdeaService()
+        data.getAll()
+            .then(result => setIdea(result))
     },[])
 
     return(

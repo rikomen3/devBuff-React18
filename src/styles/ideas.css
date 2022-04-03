@@ -3,6 +3,14 @@
     padding: 10px 5px 10px 5px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 13px;
+
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+
+.idea__wrapper:hover {
+    transform: scale(1.03);
 }
 
 .ideas {
