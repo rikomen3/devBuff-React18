@@ -9,7 +9,7 @@ export default function Ideas () {
 
     useEffect( ()=>{
         async function fetchData() {
-            let res = await fetch('https://api-staging.devbuff.com/idea/?page=1&sortBy=lastUpdate&specialists=&languages=')
+            let res = await fetch('https://api-staging.devbuff.com/idea/?page=1&sortBy=LAST_UPDATE&specialists=&languages=')
             let ideas = await res.json()
             return ideas.ideas
         }
